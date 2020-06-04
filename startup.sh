@@ -148,7 +148,7 @@ sudo apt-get install sqlitebrowser -y
 clear
 
 # echo 'installing WPS'
-install wps-office-all-lang-no-internet
+sudo apt-get install wps-office-all-lang-no-internet
 clear
 
 # echo 'installing Obs Studio'
