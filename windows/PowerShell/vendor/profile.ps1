@@ -182,5 +182,17 @@ if ( $(get-command prompt).Definition -match 'PS \$\(\$executionContext.SessionS
   Set-Item -Path function:\prompt  -Value $Prompt  -Options ReadOnly
    #Set-Location -Path D:\
 
+ # Alias
+   Function CD01 {Set-Location -Path D:\dev}
+    Set-Alias -Name dev -Value CD01
+
+   Function CD02 {Set-Location -Path D:\dev\Projetos}
+    Set-Alias -Name proj -Value CD02
+    Set-Alias -Name projeto -Value CD02
+    Set-Alias -Name projetos -Value CD02
+
+    Function CD03 {Set-Location -Path D:\dev\Cursos}
+    Set-Alias -Name curso -Value CD03
+    Set-Alias -Name cursos -Value CD03
 
 }
