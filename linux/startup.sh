@@ -47,7 +47,7 @@ clear
 echo 'installing Nodejs'
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
-nodejs -v
+node -v
 npm -v
 sudo apt-get update
 
@@ -63,7 +63,7 @@ echo 'installing spotify'
 sudo apt install -f
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install spotify-client
+sudo apt-get update && sudo apt-get install spotify-client -y
 clear
 
 echo 'installing extensions vscode'
@@ -140,7 +140,8 @@ clear
 
 echo 'installing WPS'
 sudo apt-get update
-sudo apt-get install wps-office-all-lang-no-internet
+sudo apt-get install wps-office-all-lang-no-internet -y
+
 clear
 
 echo 'installing Obs Studio'
